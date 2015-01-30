@@ -6,7 +6,7 @@
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../../lib/codemirror.css">
-<link rel="stylesheet" href="../../theme/colorforth.css">
+<link rel=stylesheet href="../../theme/colorforth.css">
 <script src="../../lib/codemirror.js"></script>
 <script src="forth.js"></script>
 <style>
@@ -53,8 +53,8 @@
 : sort ( array len -- )
   1 ?do
     dup i cells + insert
-  loop drop ;
-</textarea></form>
+  loop drop ;</textarea>
+  </form>
 
 <script>
   var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
@@ -63,7 +63,7 @@
     indentUnit: 2,
     tabSize: 2,
     autofocus: true,
-    theme: 'colorforth',
+    theme: "colorforth",
     mode: "text/x-forth"
   });
 </script>
